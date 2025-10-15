@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Onest", sans-serif;
+}
+
+:root{
+    --primary-color: #a30039;
+    --secondary-color: #baab68;
+    --third-color: #fff;
+    --fourth-color: #e3c16f;
+    --fifth-color: #e3e3e3;
+    --font-family: "Onest", sans-serif;
+}
+
+body {
+    /* background: linear-gradient(0deg,rgba(244, 208, 111, 1) 40%, 
+    rgb(204, 162, 65) 100%); */
+    /* background: var(--fifth-color); */
+
+    background: linear-gradient(0deg,rgb(247, 245, 242) 40%, rgb(240, 209, 137) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.formulario { 
+    background-color: rgba(255, 255, 255, 0.034);
+    border: .1rem solid rgba(255,255, 255, 0.1);
+    color: var(--primary-color);
+    backdrop-filter: blur(.2rem);
+    box-shadow: 0 9px 32px rgba(0, 0, 0, 0.2);
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+}
+
+.formulario h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+.caixa-formulario {
+    position: relative;
+    margin: 1.5rem 0;
+}
+
+.caixa-formulario input {
+    background-color: rgba(255, 255, 255, 0.459);
+    color: var(--secondary-color);
+    width: 100%;
+    padding: 1rem;
+    border: none;
+    padding-right: 2.5rem;
+    border-radius: .5rem;
+    outline: none;
+    font-size: 1.3rem;
+}
+
+.caixa-formulario i {
+    position: absolute;
+    right: 2.5rem;
+    top: 35%;
+}
+
+.caixa-formulario input::placeholder {
+    color: rgba(117, 92, 90, 0.5);
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+.caixa-esqueci-senha {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixa-esqueci-senha label {
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+
+.caixa-esqueci-senha label input {
+    accent-color: var(--primary-color);
+}
+
+
+.caixa-esqueci-senha a {
+    color: var(--secondary-color);
+}
+
+.caixa-esqueci-senha a:hover {
+    text-decoration: underline;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color); 
+    width: 100%;
+    height: 3rem;
+    border: none; 
+    border-radius: .8rem;
+    margin-top: .9rem;
+    outline: none;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.5s;
+}
+
+button:hover {
+    background-color: var(--third-color-color);
+    /* transform: translateY(-5px); */
+}
+
+.link-cadastro {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1.5rem;
+    font-size: 1rem;
+    
+}
+
+.link-cadastro a:hover {
+    text-decoration: underline;
+}
+
+.link-cadastro a {
+    color: var(--secondary-color);
+}
+
+
